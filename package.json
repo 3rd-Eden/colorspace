@@ -1,0 +1,24 @@
+{
+  "name": "colorspace",
+  "version": "1.0.0",
+  "description": "Generate HEX colors for a given namespace.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "namespace",
+    "color",
+    "hex",
+    "colorize",
+    "name",
+    "space",
+    "colorspace"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "dependencies": {
+    "color": "0.8.x",
+    "text-hex": "0.0.x"
+  }
+}
