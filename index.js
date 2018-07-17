@@ -13,11 +13,14 @@ var color = require('color')
  * @api private
  */
 module.exports = function colorspace(namespace, delimiter) {
-  namespace = namespace.split(delimiter || ':');
+  var split = namespace.split(delimiter || ':');
+  var base = hex(split[0]);
 
-  for (var base = hex(namespace[0]), i = 0, l = namespace.length - 1; i < l; i++) {
+  if (!split.length) return base;
+
+  for (var i = 0, l = split.length - 1; i < l; i++) {
     base = color(base)
-    .mix(color(hex(namespace[i + 1])))
+    .mix(color(hex(split[i + 1])))
     .saturate(1)
     .hex();
   }
