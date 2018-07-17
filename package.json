@@ -17,6 +17,14 @@
   ],
   "author": "Arnout Kazemier",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3rd-Eden/colorspace/issues"
+  },
+  "homepage": "https://github.com/3rd-Eden/colorspace",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3rd-Eden/colorspace"
+  },
   "dependencies": {
     "color": "3.0.x",
     "text-hex": "1.0.x"
