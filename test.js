@@ -10,5 +10,5 @@ describe('colorspace', function () {
 
   it('tones the color when namespaced by a : char', function () {
     assume(colorspace('bigpipe:pagelet')).equals('#00FF2C');
-  })
+  });
 });
