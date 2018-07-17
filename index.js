@@ -1,6 +1,6 @@
 'use strict';
 
-var colorjs = require('color')
+var color = require('color')
   , hex = require('text-hex');
 
 /**
@@ -16,7 +16,10 @@ module.exports = function colorspace(namespace, delimiter) {
   namespace = namespace.split(delimiter || ':');
 
   for (var base = hex(namespace[0]), i = 0, l = namespace.length - 1; i < l; i++) {
-    base = colorjs(base).mix(colorjs(hex(namespace[i + 1]))).saturate(1).hexString();
+    base = color(base)
+    .mix(color(hex(namespace[i + 1])))
+    .saturate(1)
+    .hex();
   }
 
   return base;

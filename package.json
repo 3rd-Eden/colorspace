@@ -4,7 +4,7 @@
   "description": "Generate HEX colors for a given namespace.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js"
   },
   "keywords": [
     "namespace",
@@ -18,12 +18,12 @@
   "author": "Arnout Kazemier",
   "license": "MIT",
   "dependencies": {
-    "color": "0.8.x",
-    "text-hex": "0.0.x"
+    "color": "3.0.x",
+    "text-hex": "1.0.x"
   },
   "devDependencies": {
-    "assume": "1.2.x",
-    "mocha": "2.2.x",
-    "pre-commit": "1.0.x"
+    "assume": "2.1.x",
+    "mocha": "5.2.x",
+    "pre-commit": "1.2.x"
   }
 }
