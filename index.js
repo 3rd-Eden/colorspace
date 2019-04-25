@@ -8,9 +8,9 @@ var color = require('color')
  * understanding name spaces and coloring each namespace a bit lighter so they
  * still have the same base color as the root.
  *
- * @param {String} name The namespace
- * @returns {String} color
- * @api private
+ * @param {string} namespace The namespace
+ * @param {string} [delimiter] The delimiter
+ * @returns {string} color
  */
 module.exports = function colorspace(namespace, delimiter) {
   var split = namespace.split(delimiter || ':');
